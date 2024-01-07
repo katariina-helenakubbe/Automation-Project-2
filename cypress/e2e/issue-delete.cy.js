@@ -18,7 +18,7 @@ describe("Issue delete", () => {
     });
   
     //Test Case 2
-    it.only("Cancel deletion", () => {
+    it("Cancel deletion", () => {
       cy.get('[data-testid="icon:trash"]').click();
       cy.get('[data-testid="modal:confirm"]').should("be.visible");
       cy.contains("Cancel").click();
